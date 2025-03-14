@@ -13,7 +13,7 @@
 	  <!-- <parameter name="url" value="url-value"></parameter>-->
     <classes>
       <class name="testng.HRMSDemo"/>
-     <!-- <class name="testng.GoogleTest"/>-->
+      <class name="testng.GoogleTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

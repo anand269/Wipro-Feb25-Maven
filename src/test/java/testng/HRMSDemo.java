@@ -15,7 +15,8 @@ public class HRMSDemo extends BaseClass{
 	@BeforeTest
 	public void readData() throws IOException
 	{
-		FileInputStream fis = new FileInputStream("D:\\Users\\Hp\\eclipse-workspace\\Wipro_Feb25_maven\\src\\test\\java\\data\\data.properties");
+		//FileInputStream fis = new FileInputStream("D:\\Users\\Hp\\eclipse-workspace\\Wipro_Feb25_maven\\src\\test\\java\\data\\data.properties");
+		FileInputStream fis = new FileInputStream("./src/test/java/data/data.properties");
 		Properties prop = new Properties();
 		prop.load(fis);//data.properties
 		name = prop.getProperty("username");
