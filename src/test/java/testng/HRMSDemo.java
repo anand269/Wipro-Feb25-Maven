@@ -34,7 +34,7 @@ public class HRMSDemo extends BaseClass{
 	}
 	
 	@Test (enabled=true)
-	//@Parameters({"browser"})
+	@Parameters({"browser"})
 	public void login() throws IOException, InterruptedException
 	{
 		invokeBrowser(browser);
