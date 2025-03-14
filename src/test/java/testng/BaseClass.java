@@ -43,7 +43,7 @@ public class BaseClass {
 	public static void closeBrowser() throws InterruptedException
 	{
 		Thread.sleep(2000);
-		driver.close();
+		driver.quit();
 	}
 
 	//Take the screenshot logic
