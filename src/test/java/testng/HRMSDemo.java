@@ -12,9 +12,10 @@ import org.testng.annotations.Test;
 public class HRMSDemo extends BaseClass{
 	String name,password,url,browser;
 	
-	@BeforeTest
+	@BeforeTest	
 	public void readData() throws IOException
 	{
+		//Added relative path to the file system
 		//FileInputStream fis = new FileInputStream("D:\\Users\\Hp\\eclipse-workspace\\Wipro_Feb25_maven\\src\\test\\java\\data\\data.properties");
 		FileInputStream fis = new FileInputStream("./src/test/java/data/data.properties");
 		Properties prop = new Properties();
@@ -35,7 +36,8 @@ public class HRMSDemo extends BaseClass{
 	}
 	
 	@Test (enabled=true)
-	@Parameters({"browser"})
+//	@Parameters({"browser"})
+	//public void login(String browser) throws IOException, InterruptedException
 	public void login() throws IOException, InterruptedException
 	{
 		invokeBrowser(browser);

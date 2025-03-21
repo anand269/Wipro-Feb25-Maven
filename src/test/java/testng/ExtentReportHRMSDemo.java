@@ -63,6 +63,7 @@ public class ExtentReportHRMSDemo extends BaseClass{
 		driver.findElement(By.name("password")).sendKeys(password);
 		driver.findElement(By.xpath("//button[@type='submit']")).click();
 		test.log(Status.INFO, "Logged in successfully");
+		test.log(Status.PASS,"Test case pass");
 		//logout
 		extent.flush();
 		closeBrowser();		
