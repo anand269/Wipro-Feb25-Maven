@@ -37,9 +37,9 @@ public class HRMSDemo extends BaseClass{
 	}
 	
 	@Test (enabled=true)
-//	@Parameters({"browser"})
-	//public void login(String browser) throws IOException, InterruptedException
-	public void login() throws IOException, InterruptedException
+	@Parameters({"browser"})
+	public void login(String browser) throws IOException, InterruptedException
+//	public void login() throws IOException, InterruptedException
 	{
 		invokeBrowser(browser);
 		driver.get(url);
