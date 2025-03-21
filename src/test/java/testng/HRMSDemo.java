@@ -21,6 +21,7 @@ public class HRMSDemo extends BaseClass{
 		Properties prop = new Properties();
 		prop.load(fis);//data.properties
 		name = prop.getProperty("username");
+		System.out.println(name);
 		password = prop.getProperty("password");
 		url = prop.getProperty("url");
 		browser = prop.getProperty("browser");
